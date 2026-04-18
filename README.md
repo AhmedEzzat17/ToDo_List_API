@@ -8,15 +8,7 @@ A RESTful API built with Laravel 12 and MySQL.
 
 ```bash
 composer install
-cp .env.example .env
 php artisan key:generate
-```
-
-Configure `.env`:
-```env
-DB_DATABASE=todo_list_api
-DB_USERNAME=root
-DB_PASSWORD=
 ```
 
 ```bash
@@ -28,9 +20,8 @@ php artisan serve
 
 ## API Endpoints
 
-> Base URL: `http://127.0.0.1:8000/api`  
-> Headers: `Accept: application/json`
-
+> Base URL: `http://127.0.0.1:8000/api`
+> 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | GET | `/todos` | List all todos |
@@ -67,3 +58,4 @@ After login, add to every request header:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
+Ahmed Ezzat 
